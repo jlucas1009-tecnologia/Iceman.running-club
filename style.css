@@ -1,0 +1,103 @@
+
+  /* ===== UPGRADE VISUAL PROFISSIONAL ===== */
+
+/* Suaviza tudo */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Melhor tipografia */
+body {
+  letter-spacing: 0.3px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* HERO mais impactante */
+.hero h2 {
+  text-shadow: 0 0 40px rgba(10,132,255,0.15);
+}
+
+.highlight {
+  color: #0A84FF;
+  letter-spacing: 1px;
+}
+
+/* Botões premium */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 60%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+/* Seções com mais profundidade */
+section {
+  backdrop-filter: blur(0px);
+}
+
+/* Cards mais premium */
+.card {
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  border-color: rgba(10,132,255,0.5);
+}
+
+/* Navbar mais elegante */
+header {
+  transition: 0.3s;
+}
+
+header.scrolled {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Texto mais limpo */
+p {
+  line-height: 1.7;
+}
+
+/* Impacto mais forte */
+.impact {
+  text-shadow: 0 0 30px rgba(10,132,255,0.2);
+}
+
+/* Hover suave nos links */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background: #0A84FF;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Animação mais fluida */
+section {
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
